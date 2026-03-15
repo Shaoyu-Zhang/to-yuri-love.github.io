@@ -7,11 +7,11 @@ let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
 const noTexts = [
-    "？人，你认真的吗…", 
-    "人，要不再想想？", 
-    "熊，不许你选这个！ ", 
-    "熊，会很伤心…", 
-    "人，不许"
+    "？人，你认真的吗……熊给你道歉。", 
+    "人，熊真的知道错了。", 
+    "求求人……不要这样。", 
+    "熊，给你磕头。", 
+    "人，熊要哭了。"
 ];
 
 // No 按钮点击事件
@@ -37,11 +37,11 @@ noButton.addEventListener("click", function() {
     }
 
     // 图片变化（前 5 次变化）
-    if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
-    if (clickCount === 2) mainImage.src = "images/think.png";   // 思考
-    if (clickCount === 3) mainImage.src = "images/angry.png";   // 生气
+    if (clickCount === 1) mainImage.src = "images/crying2.png"; // 震惊
+    if (clickCount === 2) mainImage.src = "images/crying3.png";   // 思考
+    if (clickCount === 3) mainImage.src = "images/crying4.png";   // 生气
     if (clickCount === 4) mainImage.src = "images/crying.png";  // 哭
-    if (clickCount >= 5) mainImage.src = "images/crying.png";  // 之后一直是哭
+    if (clickCount >= 5) mainImage.src = "images/crying5.png";  // 之后一直是哭
 
 });
 
@@ -49,7 +49,7 @@ noButton.addEventListener("click", function() {
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
-            <h1 class="yes-text">!!!熊喜欢你!! ( >᎑<)♡︎ᐝ</h1>
+            <h1 class="yes-text">!!!谢谢人!! ( >᎑<)♡︎ᐝ</h1>
             <img src="images/hug.png" alt="拥抱" class="yes-image">
         </div>
     `;
